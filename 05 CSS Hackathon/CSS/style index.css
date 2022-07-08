@@ -1,0 +1,310 @@
+/*reset*/
+*{
+  margin:0;
+  padding: 0;
+  /*font-size: 16px;*/
+}
+body html{height: 100vh;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*reset*/
+
+body{
+  background-color: lightgrey;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #main-header{
+    font-size: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, 
+              rgba(40,40,41,1) 35%, rgba(0,212,255,1) 100%); 
+    padding-bottom: 5px;
+  }
+  h1{
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 10px;
+  }
+  #logo01{
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+  }
+
+  #navigation{
+    width: 100%;
+    background: rgb(40, 40, 41);
+  }
+  #nav-bar{
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+  #navigation a:hover{
+    color: red;
+  }
+  ul{
+    list-style: none;
+  }
+  ul li a{
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  
+  }
+  #showcase{
+    color: white;
+    background-image: url(Images/prodigy_on_stage.jpg);
+    background-size: 100%;
+    min-height: 162px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+  .main-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
+    margin: 10px;
+    gap: 10px;
+  }
+  #history{
+    border-radius: 20px;
+    background-color:rgb(40, 40, 41);
+    color: white;
+    height: auto;
+    padding: 15px;
+  }
+  #sidebar{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 20px;
+    background-color:rgb(40, 40, 41);
+    color: white;
+    padding: 15px
+  }
+  #moog-prodigy{
+    border: 5px;
+    border-color: rgb(253, 253, 253);
+    border-style: double;
+    border-radius: 15px;
+    height: auto;
+    width: 50%;
+    margin-top: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #sidebar a:hover {
+    opacity: 0.4;
+  }
+  #antlogo{
+    grid-row: 2;
+    border-radius: 20px;
+    background-color:rgb(40, 40, 41);
+    padding: 15px;
+  }
+  #antlogo :hover{
+    background-color: red;
+  }
+  #ant{
+    border: 5px;
+    border-color: rgb(253, 253, 253);
+    border-style: double;
+    border-radius: 15px;
+    height: auto;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  #footer{
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, 
+              rgba(40,40,41,1) 35%, rgba(0,212,255,1) 100%); 
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #main-header{
+    font-size: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, 
+              rgba(40,40,41,1) 35%, rgba(0,212,255,1) 100%); 
+    padding-bottom: 5px;
+  }
+  h1{
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 10px;
+  }
+  #logo01{
+    height: 40%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+  }
+
+  #navigation{
+    width: 100%;
+    background: rgb(40, 40, 41);
+  }
+  #nav-bar{
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: space-evenly;
+  }
+  #navigation a:hover{
+    color: red;
+  }
+  ul{
+    list-style: none;
+  }
+  ul li a{
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+}
+
+#showcase{
+    color: white;
+    background-image: url(/Images/prodigy_on_stage.jpg);
+    background-size: 100%;
+    min-height: 162px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.main-grid{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto auto;
+  margin: 10px;
+  gap: 10px;
+}
+#history{
+  border-radius: 20px;
+  background-color:rgb(40, 40, 41);
+  color: white;
+  height: auto;
+  padding: 15px;
+}
+#sidebar{
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius: 20px;
+  background-color:rgb(40, 40, 41);
+  color: white;
+  padding: 15px
+}
+#moog-prodigy{
+  border: 5px;
+  border-color: rgb(253, 253, 253);
+  border-style: double;
+  border-radius: 15px;
+  height: auto;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sidebar a:hover {
+  opacity: 0.4;
+}
+#antlogo{
+  grid-row: 2;
+  border-radius: 20px;
+  background-color:rgb(40, 40, 41);
+  padding: 15px;
+}
+#antlogo :hover{
+  background-color: red;
+}
+#ant{
+  border: 5px;
+  border-color: rgb(253, 253, 253);
+  border-style: double;
+  border-radius: 15px;
+  height: auto;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#footer{
+  /*position: fixed;*/
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 10px;
+  font-family: "Audiowide", sans-serif;
+  color: white;
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, 
+            rgba(40,40,41,1) 35%, rgba(0,212,255,1) 100%); 
+  border-radius: 10px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{
+    /*background-color: red;*/
+    max-width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #logo01{
+    height: 35%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+  }
+  p{
+    font-size: 14px;}
+}
+

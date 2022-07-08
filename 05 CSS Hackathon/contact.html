@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link rel="stylesheet" type="text/css" href="css/style contact.css" />
+    <title>Get In Touch</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <div>
+          <img id="logo01" src="Images/Prodigy Logo 01.png" alt="Logo01" />
+        </div>
+      </div>
+    </header>
+
+    <nav id="navigation">
+      <div class="container">
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="albums.html">The Albums</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="showcase">
+      <div>
+        <p>Get in touch with us!</p>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <h1>Please fill out the form below</h1>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" placeholder="Your Name" name="name" required />
+        <br /><br />
+        <input type="email" placeholder="Your Email Address" name="email" required />
+        <br /><br />
+        <input type="phone" placeholder="Your Phone Number" name="phone" />
+        <br /><br />
+        <input
+          placeholder="Your Birthdate"
+          class="textbox-n"
+          type="text"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          id="date"
+        />
+        <br /><br />
+        <div>Vote for best Album</div>
+        <input checked="checked" type="radio" name="user_level" id="rd1" value="1" />
+        <label for="rd1">Experience</label><br />
+        <input type="radio" name="user_level" id="rd2" value="2" />
+        <label for="rd2">Music For The Jilted Generation</label><br />
+        <input type="radio" name="user_level" id="rd3" value="3" />
+        <label for="rd3">The Fat of the Land</label>
+        <br />
+        <p>"Choose File" to upload your picture with the Prodigy</p>
+        <input type="file" id="file-recipe" name="filename" />
+        <!--<input type="submit" />-->
+        <br /><br />
+        <textarea
+          rows="5"
+          cols="40"
+          placeholder="Share UR best memory of a Prodigy gig"
+          name="message"
+        ></textarea>
+        <br /><br />
+        <button type="reset">Reset Form</button>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <f>Info and Copyright &copy; mE!</f>
+    </footer>
+  </body>
+</html>
